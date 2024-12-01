@@ -55,7 +55,7 @@ def main():
         report = checker.generate_report()
         
         print("=== Excel Data Quality Report ===")
-        print("\nNull Values (%):")
+        print("\nNull Values (%):")        
         for col, pct in report['null_values'].items():
             print(f"{col}: {pct:.2f}%")
         
